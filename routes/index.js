@@ -8,4 +8,7 @@ router.use('/', home)
 const todos = require('./modules/todos')
 // 將網址結構符合 /todos 字串開頭的 request 導向 todos 模組 
 router.use('/todos', todos)
+// 將網址結構符合 /users 字串開頭的 request 導向 users 模組 
+const users = require('./modules/users')
+router.use('/users', users)
 module.exports = router
